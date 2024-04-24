@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>login</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            font-family:"poppins",sans-serif;
+        }
+        
+         .bg {
+            height: 100%;
+            width: 100%;
+            margin-top:-20px ;
+            background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/public/bg-2.jpg);height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            background-repeat: no-repeat;
+
+         }
+         
+         .box{
+            width: 330px;
+            padding: 2rem 1rem;
+            margin: 90px auto;
+            background-color: rgb(102, 104, 102);
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+        }
+        .box h1{
+            margin-bottom: 10px;
+        }
+        
+        form input{
+            width: 80%;
+            outline: none;
+            border: 1px solid #fff;
+            padding: 12px 20px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            background: #e4e4e4;
+
+        }
+        button{
+            font-size: 1rem;
+            margin-top: 1.8rem;
+            padding: 10px;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            width: 80%;
+            background: rgb(17,107,143);
+            color: #fff;
+            cursor: pointer;
+
+         }
+        button:hover{
+            background: rgba(111, 191, 225, 0.877);
+        }
+        input:focus{
+            border: 1px solid rgb(211, 85, 85);
+        }
+        .member{
+            font-size: 0.8rem;
+            margin-top: 1.2rem;
+           color: rgb(232, 243, 247);
+
+        }
+        .member a{
+            color: rgb(98, 190, 239);
+            text-decoration: none;
+        }
+        .terms a{
+           
+            color: lightseagreen;
+            font-size: 15px;
+            text-decoration: none;
+            margin-left: 10px;
+            margin-top: 4PX;
+        }
+         
+   </style>
+</head>
+<body>
+  <div class="bg">
+   <div class="box">
+        <h1>LOGIN</h1>
+    <form action="#">
+        <input type="text" placeholder="Username">
+        <input type="text" placeholder="Name">
+        <input type="password" placeholder="password">
+        <input type="password" placeholder="Re-Enter password">
+    </form>
+    <div class="terms">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox"> i agree to these <a href="#"> Terms & Conditions</a></label>
+    </div>
+    <button>Sign up</button>
+    <div class="member">
+        already a member? <a href="login.hbs">Login Here</a>
+    </div>
+
+
+    </div>         
+</body>
+</html>
